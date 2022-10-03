@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "639999292752",
+    "project_id": "dailytasklist-a42e5",
+    "storage_bucket": "dailytasklist-a42e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639999292752:android:ffe7fe0e47d255cdca2855",
+        "android_client_info": {
+          "package_name": "com.raisa.dailytasklist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639999292752-scnb37m3uisu56ehm52leq1d49igho1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdIL96wSLDj1D-DkG3VbSkHs4zz_fai10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639999292752-scnb37m3uisu56ehm52leq1d49igho1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
