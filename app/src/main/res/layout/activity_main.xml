@@ -16,10 +16,11 @@
         tools:listitem="@layout/rv_task" />
 
     <TextView
+        android:id="@+id/NoTasks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
-        android:text="No Tasks to show"
+        android:text=""
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
