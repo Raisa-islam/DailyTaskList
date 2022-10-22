@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        databaseReference = FirebaseDatabase.getInstance().getReference("Persons");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Persons");
         addTaskFab = findViewById(R.id.idFABAddTask);
         noTasks = findViewById(R.id.NoTasks);
         recyclerView = findViewById(R.id.idRVCourses);
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                 String hrs = Integer.toString(n);
                 String min = Integer.toString(m);
 
-                if(!TextUtils.isEmpty(Title)||!TextUtils.isEmpty(Description))
+                if(!TextUtils.isEmpty(Title))
                 {
 
                     add_info(Title, Description, hrs, min);
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
     void add_info(String title, String description, String hour, String min)
     {
         String id = databaseReference.push().getKey();
-        Task task = new Task(title, description, hour, min);
+        Task task = new Task(id, title, description);
         databaseReference.child(id).setValue(task);
     }
 }

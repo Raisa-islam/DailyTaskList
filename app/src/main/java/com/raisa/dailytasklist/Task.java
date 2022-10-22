@@ -1,7 +1,7 @@
 package com.raisa.dailytasklist;
 
 public class Task {
-    String id, title, description, hour, min;
+    String id, title,hour, min, description;
     public Task(){
 
     }
@@ -30,24 +30,9 @@ public class Task {
         this.description = description;
     }
 
-    public String getHour() {
-        return hour;
-    }
 
-    public void setHour(String hour) {
-        this.hour = hour;
-    }
-
-    public String getMin() {
-        return min;
-    }
-
-    public void setMin(String min) {
-        this.min = min;
-    }
-
-    public Task(String title, String description, String hour, String min) {
-       // this.id = id;
+    public Task(String id,String title, String description) {
+        this.id = id;
         this.title = title;
         this.description = description;
         this.hour = hour;
